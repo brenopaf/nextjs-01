@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body { font-family: 'Roboto', sans-serif; font-weight:400; color:#000000; font-size:14px; }
+ul, li { list-style: none; padding:0; margin:0; }
+a:hover { text-decoration: none; }
+
+/* .col-lg- */
+
+header { background-color:#26344F; padding-top:20px; padding-bottom:20px; }
+#logo { text-align:center; }
+#logo img { width:100%; }
+#menu { text-align:right; }
+#menu ul { padding:15px 0; }
+#menu ul li { display:inline-block; margin-left:60px; }
+#menu ul li a { color:#FFFFFF; font-size:17px; }
+#menu ul li a:hover, #menu ul li .hover { color:#FFDD00; }
+
+footer { background-color:#26344F; }
+#rodape-logo { padding-top:44px; padding-bottom:44px; border-bottom:1px solid #979797; }
+.rodape-info { padding-top:44px; padding-bottom:44px; color:#FFFFFF; font-size:18px; }
+.rodape-info img { margin-bottom:20px; }
+
+#banner-internas { margin-top:60px; margin-bottom:60px; position:relative; }
+#banner-internas h2 { position:absolute; color:#FFFFFF; font-size:56px; font-weight:700; top: 35%; left: 8%; }
+
+#diferenciais .itens-sobre { margin-bottom:60px; }
+#diferenciais .itens-sobre span { font-size:16px; }
+
+#banner-contato { height:340px; background:url(/contato-banner.png); background-position:top center; background-size:cover; font-size:33px; line-height:120%; color:#26344F; }
+#banner-contato a { font-size:20px; color:#26344F; border:2px solid #26344F; } 
+#banner-contato a:hover { color:#26344F; } 
+
+
+.carousel-caption { bottom:auto; top: 27%; left: 15%; }
+.carousel-caption h5 { font-size:54px; }
+.carousel-caption a { background-color:#FFDD00; font-size:20px; color:#26344F; }
+
+.titulo-home { color:#26344F; font-size:56px; }
+
+#servicos a { border:2px solid #26344F; color:#26344F; font-size:18px; display:inline-block; }
+
+/* Medium devices (tablets, less than 1200px) .col-lg- */
+@media (max-width: 1280px) {
+	.carousel-caption { top: 13%; left: 13%; }
+	.carousel-caption h5 { font-size:40px; }
+	.carousel-caption a { font-size:18px; }
+	
+	.titulo-home { font-size:46px; }
+}
+
+/* Medium devices (tablets, less than 992px) .col-md- */
+@media (max-width: 991.98px) {
+	#logo img { width:224px; }
+	#menu { text-align:center; }
+	#menu ul li { margin-left:10px; margin-right:10px; }
+	
+	#banner-internas { margin-top:30px; margin-bottom:30px; }
+	#banner-internas h2 { font-size:42px; }
+	
+	#banner-contato { height:280px; background-position:-160px center; font-size:28px; }
+
+	.carousel-caption { top: 13%; left: 13%; }
+	.carousel-caption h5 { font-size:40px; }
+	.carousel-caption a { font-size:18px; }
+	
+	.titulo-home { font-size:46px; }
+	.carousel-caption { top: 15%; left: 11%; }
+	.carousel-caption h5 { font-size:35px; }
+	.carousel-caption a { font-size:16px; }
+	
+	.titulo-home { font-size:36px; }
+}
+
+/* Small devices (landscape phones, less than 768px) .col-sm- */
+@media (max-width: 767.98px)  {
+	#menu ul li { margin-left:5px; margin-right:5px; }
+	
+	.rodape-info { padding-top:21px; padding-bottom:21px; font-size:16px; }
+	.rodape-info img { width:36px; height:auto; }
+	
+	#banner-internas h2 { font-size:36px; }
+	#banner-internas { font-size:16px; }
+
+	#diferenciais .itens-sobre { margin-bottom:30px; }
+	
+	#banner-contato { background-position:left center; }
+
+	.carousel-caption { top: 12%; left: 14%; }
+	.carousel-caption h5 { font-size:20px; }
+	.carousel-caption a { font-size:14px; }
+	.carousel-indicators { display:none; }
+	
+	#servicos a { font-size:16px; }
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) .col- */
+@media (max-width: 575.98px) {
+	#banner-internas h2 { font-size:26px; }	
+	
+	header #logo { text-align:left; }
+	header #bt-menu { display: flex; flex-direction: column; justify-content: center; align-items: center; background: #FFFFFF; border: none; right: 4vw; top: 3vh; position: fixed; font-size: 22px; color: #26344F; width: 34px; height: 34px; line-height: 34px; text-align: center; z-index: 991; box-shadow: 2px 2px 5px rgba(0,0,0,.3); }	
+	#menu { display: block; position: fixed; top: 0; left: 100vw; opacity: 0; background-color: #26344F; height: 100vh; width: 100vw; transition: left .4s, opacity .4s; z-index:99; }
+	#menu.active { left: 0; opacity: 1; }
+	#menu { text-align:center; }
+	#menu ul { padding:60px 0 0; }
+	#menu ul li { display:block; margin-left:0; padding:10px 0; }
+	#menu ul li a { font-size:20px; }
+	#menu-titulo { font-size:24px; color:#FFDD00; margin-bottom:10px; font-weight:700; border-bottom:1px solid #FFDD00; }
+
+	.carousel-caption { top: 5%; left: 10%; }
+	.carousel-caption h5 { font-size:14px; }
+	.carousel-caption a { font-size:10px; }
+	
+	.titulo-sobre { font-size:26px; }
+}
